@@ -264,13 +264,22 @@
     return d.firstChild;
   }
 
+  function formatOrderDateTime(){
+    var d = new Date();
+    var pad = function(n){ return n < 10 ? '0' + n : '' + n; };
+    var date = pad(d.getDate()) + '/' + pad(d.getMonth() + 1) + '/' + d.getFullYear();
+    var time = pad(d.getHours()) + ':' + pad(d.getMinutes());
+    return date + ' às ' + time;
+  }
+
   function buildWaText(){
     var entries = items.filter(function(it){ return (state.selected[it.id] || 0) > 0; });
+    var when = formatOrderDateTime();
     if (entries.length === 0){
-      return 'Olá, gostaria de fazer um pedido';
+      return 'Olá, gostaria de fazer um pedido\nData do pedido: ' + when;
     }
     var lines = entries.map(function(it){ return '- ' + state.selected[it.id] + 'x ' + it.name; }).join('\n');
-    return 'Olá! Gostaria de fazer o seguinte pedido:\n' + lines + '\n\nObrigado!';
+    return 'Olá! Gostaria de fazer o seguinte pedido:\n' + lines + '\n\nData do pedido: ' + when + '\nObrigado!';
   }
 
   function totalCount(){
@@ -366,6 +375,11 @@
 
   document.querySelectorAll('.tabbtn').forEach(function(btn){
     btn.addEventListener('click', function(){ setTab(btn.getAttribute('data-tab')); });
+  });
+
+  ['waBtnMenu', 'waBtnContato', 'waBtnDesktop'].forEach(function(id){
+    var btn = document.getElementById(id);
+    if (btn) btn.addEventListener('click', function(){ renderCartUI(); });
   });
 
   renderPills();
