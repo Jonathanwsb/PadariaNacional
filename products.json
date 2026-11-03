@@ -1,0 +1,15 @@
+{
+  "categories": ["Doces & Especiais", "Salgados & Folhados", "Pães", "Bebidas"],
+  "items": [
+    { "id": "rabanada", "category": "Doces & Especiais", "name": "Rabanada", "price": "R$ 3,00", "image": "images/rabanada.jpg" },
+    { "id": "panetone", "category": "Doces & Especiais", "name": "Panetone", "price": "R$ 13,00", "image": null },
+    { "id": "goiabada", "category": "Doces & Especiais", "name": "Biscoitinho de goiabada", "price": "[PREÇO]", "image": "images/goiabada.jpg" },
+    { "id": "folhado", "category": "Salgados & Folhados", "name": "Folhado misto", "price": "[PREÇO]", "image": "images/folhado-glace.jpg" },
+    { "id": "salgados", "category": "Salgados & Folhados", "name": "Salgados variados", "price": "[PREÇO]", "image": "images/folhado-pilha.jpg" },
+    { "id": "coxinha", "category": "Salgados & Folhados", "name": "Coxinha", "price": "R$ 5,00", "image": null },
+    { "id": "pao_frances", "category": "Pães", "name": "Pão francês (unid.)", "price": "R$ 2,00", "image": null },
+    { "id": "pao_doce", "category": "Pães", "name": "Pão doce", "price": "[PREÇO]", "image": null },
+    { "id": "cafe", "category": "Bebidas", "name": "Café expresso", "price": "[PREÇO]", "image": null },
+    { "id": "suco", "category": "Bebidas", "name": "Suco natural", "price": "[PREÇO]", "image": null }
+  ]
+}
