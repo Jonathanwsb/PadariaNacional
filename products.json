@@ -7,7 +7,7 @@
     { "id": "folhado", "category": "Salgados & Folhados", "name": "Folhado misto", "price": "[PREÇO]", "image": "images/folhado-glace.jpg" },
     { "id": "salgados", "category": "Salgados & Folhados", "name": "Salgados variados", "price": "[PREÇO]", "image": "images/folhado-pilha.jpg" },
     { "id": "coxinha", "category": "Salgados & Folhados", "name": "Coxinha", "price": "R$ 5,00", "image": null },
-    { "id": "pao_frances", "category": "Pães", "name": "Pão francês (unid.)", "price": "R$ 2,00", "image": null },
+    { "id": "pao_frances", "category": "Pães", "name": "Pão francês (unid.)", "price": "R$ 2,00", "image": "images/Pão.jpg" },
     { "id": "pao_doce", "category": "Pães", "name": "Pão doce", "price": "[PREÇO]", "image": null },
     { "id": "cafe", "category": "Bebidas", "name": "Café expresso", "price": "[PREÇO]", "image": null },
     { "id": "suco", "category": "Bebidas", "name": "Suco natural", "price": "[PREÇO]", "image": null }
